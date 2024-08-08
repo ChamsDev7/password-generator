@@ -1,11 +1,9 @@
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <h1>Password generator</h1>
-    </>
-  );
+  return <PasswordGenerator />;
 }
 
 export default App;

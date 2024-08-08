@@ -1,28 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Button.scss';
+import PropTypes from "prop-types";
+import "./Button.scss";
 
 /**
  * A generic button component.
- * 
+ *
  * @component
  * @example
  * const handleClick = () => {
  *   console.log('Button clicked!');
  * };
- * 
+ *
  * return (
  *   <Button onClick={handleClick} className="my-button">
  *     Click Me
  *   </Button>
  * );
  */
-const Button = ({ children, onClick, className = '', type = 'button' }) => {
+const Button = ({
+  children,
+  onClick,
+  className = "",
+  type = "button",
+  disabled = false,
+}) => {
   return (
     <button
       type={type}
       onClick={onClick}
       className={`button ${className}`}
+      disabled={disabled}
     >
       {children}
     </button>
@@ -37,7 +43,9 @@ Button.propTypes = {
   /** Additional class names for styling */
   className: PropTypes.string,
   /** Button type (e.g., 'button', 'submit', 'reset') */
-  type: PropTypes.oneOf(['button', 'submit', 'reset']),
+  type: PropTypes.oneOf(["button", "submit", "reset"]),
+  /** Button disabled */
+  disabled: PropTypes.bool,
 };
 
 export default Button;
