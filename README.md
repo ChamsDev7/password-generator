@@ -39,16 +39,16 @@ yarn install
 Run the development server to view the app locally:
 
 ```bash
-npm start
+npm run dev
 ```
 
 or with Yarn:
 
 ```bash
-yarn start
+yarn dev
 ```
 
-Open `http://localhost:3000` in your browser to see the app in action.
+Open `http://localhost:5173` in your browser to see the app in action.
 
 ## Usage
 
