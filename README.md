@@ -119,4 +119,3 @@ For any questions or feedback, please open an issue on the GitHub repository or 
 ---
 
 Thank you for using the Password Generator app!
-```
